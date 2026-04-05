@@ -161,6 +161,33 @@ function initSmoothScroll() {
   });
 }
 
+/* ── Deep links para redes sociales en móvil ────────────────── */
+function initSocialDeepLinks() {
+  const isAndroid = /android/i.test(navigator.userAgent);
+  const isIOS     = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  if (!isAndroid && !isIOS) return; // desktop: el href normal funciona bien
+
+  document.querySelectorAll('.social-icon-link[data-app-ios]').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const appUrl     = isIOS ? link.dataset.appIos : link.dataset.appAndroid;
+      const webUrl     = link.href;
+      const fallbackMs = 1500; // si la app no abre en 1.5s, abre el navegador
+
+      // Intenta abrir la app
+      window.location = appUrl;
+
+      // Fallback: si no se fue a la app, abre la web
+      const timer = setTimeout(() => {
+        window.open(webUrl, '_blank', 'noopener,noreferrer');
+      }, fallbackMs);
+
+      // Si el usuario sale de la página (app abrió), cancela el fallback
+      window.addEventListener('blur', () => clearTimeout(timer), { once: true });
+    });
+  });
+}
+
 /* ── Navbar compact on scroll ────────────────────────────────── */
 function initNavScroll() {
   const nav = document.getElementById('navbar');
@@ -197,6 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initSmoothScroll();
   initNavScroll();
+  initSocialDeepLinks();
 
   // Libs (may load async)
   initAOS();

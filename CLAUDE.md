@@ -165,6 +165,8 @@ Toda la paleta está en variables en `css/styles.css`. Se aplican en `:root` (mo
   - Instagram: https://www.instagram.com/lacorteteatral/
   - TikTok: https://www.tiktok.com/@lacorteteatralqro?lang=es
   - Todos abren en pestaña nueva (`target="_blank" rel="noopener noreferrer"`)
+  - En móvil: `initSocialDeepLinks()` en `main.js` detecta iOS/Android e intenta abrir la app nativa primero (deep link). Si la app no responde en 1.5s, abre el navegador como fallback.
+  - Los deep links están en atributos `data-app-ios` y `data-app-android` en cada `<a>`
 - "© 2026 La Corte Teatral. Adaptación: César Ferrón · Dirección: Joel Jiménez"
 
 ### `.floating-cta` — Botón flotante fijo
