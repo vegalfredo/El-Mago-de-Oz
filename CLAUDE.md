@@ -161,6 +161,10 @@ Toda la paleta está en variables en `css/styles.css`. Se aplican en `:root` (mo
 - Logo + dirección + teléfono clickeable
 - Links de navegación
 - Íconos SVG reales de Facebook, Instagram, TikTok (clase `.social-icon-link`, círculos translúcidos)
+  - Facebook: https://www.facebook.com/LaCorteTeatral
+  - Instagram: https://www.instagram.com/lacorteteatral/
+  - TikTok: https://www.tiktok.com/@lacorteteatralqro?lang=es
+  - Todos abren en pestaña nueva (`target="_blank" rel="noopener noreferrer"`)
 - "© 2026 La Corte Teatral. Adaptación: César Ferrón · Dirección: Joel Jiménez"
 
 ### `.floating-cta` — Botón flotante fijo
