@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Mago de Oz — Obra de Teatro para Niños | Querétaro Abril 2026</title>
+  <meta name="description" content="¡Vive la magia de El Mago de Oz en teatro! Obra para toda la familia con canciones y diversión. Domingos de abril en La Corte Teatral, Centro de Querétaro. Boletos desde $150.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="🎭 El Mago de Oz — Teatro para Niños en Querétaro">
+  <meta property="og:description" content="Domingos 5, 12 y 19 de abril. ¡Boletos desde $150! Obra musical para toda la familia.">
+  <meta property="og:image" content="./img/og-image.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Mobile browser colors -->
+  <meta name="theme-color" content="#C5A030">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Tema inline: evita flash al cargar -->
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', saved);
+    })();
+  </script>
+
+  <!-- Inline critical CSS (above-the-fold hero) -->
+  <style>
+    body { background-color: #FDFAF3; transition: background-color 0.3s ease; }
+    [data-theme="dark"] body { background-color: #0D1117; }
+    #hero {
+      min-height: 100svh;
+      background: linear-gradient(180deg, #0e3d6e 0%, #1a5c8a 25%, #1b7a3d 65%, #145c2e 100%);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVEGACIÓN FIJA
+       ============================================================ -->
+  <header id="navbar" role="banner">
+    <div class="container nav-inner">
+
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" aria-label="La Corte Teatral - Inicio">
+        <img src="img/logo.png" alt="La Corte Teatral" style="height:36px; width:auto; max-width:36px; object-fit:contain; vertical-align:middle; margin-right:0.5rem; flex-shrink:0;">
+        La Corte Teatral
+        <span>Querétaro</span>
+      </a>
+
+      <!-- Desktop links -->
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#obra">La Obra</a></li>
+          <li><a href="#fechas">Fechas</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#alimentos">Alimentos</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+          <span class="icon-dark">🌙 Oscuro</span>
+          <span class="icon-light">☀️ Claro</span>
+        </button>
+        <a href="tel:4481204431" class="btn-nav-cta">🎟️ Comprar Boletos</a>
+        <button id="hamburger" class="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Menú móvil">
+      <a href="#obra">🎭 La Obra</a>
+      <a href="#fechas">📅 Fechas y Precios</a>
+      <a href="#galeria">📸 Galería</a>
+      <a href="#ubicacion">📍 Ubicación</a>
+      <a href="#alimentos">🍿 Alimentos</a>
+      <a href="tel:4481204431" class="btn-cta" style="text-align:center;">🎟️ Comprar Boletos — 448 120 4431</a>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       SECCIÓN 1 — HERO
+       ============================================================ -->
+  <section id="hero" aria-label="Inicio">
+    <!-- Sparkles container -->
+    <div class="sparkles" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+
+      <!-- Poster -->
+      <div class="hero-poster-wrap">
+        <img
+          src="img/cartel-oficial.webp"
+          alt="Cartel oficial de El Mago de Oz — La Corte Teatral"
+          class="hero-poster"
+          width="360"
+          height="510"
+          fetchpriority="high"
+        >
+      </div>
+
+      <!-- Text -->
+      <div class="hero-text">
+        <span class="hero-magic-label">✨ La magia cobra vida en el escenario ✨</span>
+
+        <h1 class="hero-title">
+          El <span class="highlight">Mago</span><br>de Oz
+        </h1>
+
+        <p class="hero-subtitle">
+          Regálale a tu familia un domingo <strong>INOLVIDABLE</strong><br>
+          con la obra de teatro más mágica de Querétaro
+        </p>
+
+        <!-- Badges -->
+        <div class="hero-badges" aria-label="Características de la obra">
+          <span class="badge">🎵 ¡Con canciones!</span>
+          <span class="badge">👨‍👩‍👧‍👦 Para toda la familia</span>
+          <span class="badge">⭐ Desde 3 años</span>
+          <span class="badge">😊 ¡Cero groserías!</span>
+        </div>
+
+        <!-- Countdown -->
+        <div class="countdown-wrapper" aria-live="polite" aria-label="Cuenta regresiva a la próxima función">
+          <p class="countdown-label">⏳ Próxima función en:</p>
+          <div class="countdown">
+            <div class="countdown-unit">
+              <span class="countdown-num cd-days">00</span>
+              <span class="countdown-lbl">Días</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-unit">
+              <span class="countdown-num cd-hours">00</span>
+              <span class="countdown-lbl">Horas</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-unit">
+              <span class="countdown-num cd-mins">00</span>
+              <span class="countdown-lbl">Mins</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-unit">
+              <span class="countdown-num cd-secs">00</span>
+              <span class="countdown-lbl">Segs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA group -->
+        <div class="hero-cta-group">
+          <a href="tel:4481204431" class="btn-cta btn-cta-hero" id="btn-hero-cta">
+            🎟️ ¡Quiero mis boletos!
+          </a>
+          <a
+            href="https://wa.me/524481204431?text=Hola,%20quiero%20boletos%20para%20El%20Mago%20de%20Oz"
+            class="btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            💬 WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll arrow -->
+    <a href="#obra" class="scroll-arrow" aria-label="Ver más contenido">▼</a>
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN 2 — PROPUESTA DE VALOR
+       ============================================================ -->
+  <section id="obra" class="section-alt" aria-labelledby="obra-title">
+    <div class="container">
+      <h2 class="section-title" id="obra-title" data-aos="fade-up">🎭 ¿Por qué esta obra?</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Una producción profesional pensada para hacer feliz a toda la familia
+      </p>
+
+      <div class="value-grid">
+        <div class="value-card" data-aos="fade-up" data-aos-delay="0">
+          <span class="value-icon">🎭</span>
+          <h3>Actuación en vivo</h3>
+          <p>Actores profesionales dan vida a Dorothy, el Espantapájaros, el Hombre de Hojalata y el León ante tus ojos.</p>
+        </div>
+
+        <div class="value-card" data-aos="fade-up" data-aos-delay="150">
+          <span class="value-icon">🎵</span>
+          <h3>Canciones originales</h3>
+          <p>Música que hará cantar y bailar a tus pequeños. ¡Una experiencia que no olvidarán!</p>
+        </div>
+
+        <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+          <span class="value-icon">😂</span>
+          <h3>100% familiar</h3>
+          <p>Adaptación pensada para niños desde 3 años: divertida, respetuosa y llena de aventura sin groserías.</p>
+        </div>
+      </div>
+
+      <p class="creditos-text" data-aos="fade-up">
+        Adaptación de César Ferrón · Dirección de Joel Jiménez
+        <br><span style="font-size:0.9rem; font-family: var(--font-headings); color: var(--color-text-light);">Una producción de La Corte Teatral</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN 3 — FECHAS, HORARIOS Y PRECIOS
+       ============================================================ -->
+  <section id="fechas" aria-labelledby="fechas-title">
+    <div class="container">
+      <h2 class="section-title" id="fechas-title" data-aos="fade-up">📅 Fechas, Horarios y Precios</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Solo 3 domingos de magia — ¡Asegura tu lugar!
+      </p>
+
+      <div class="tickets-grid">
+
+        <!-- Ticket 1: 5 de abril -->
+        <article class="ticket-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="ticket-header">
+            <h3>📅 Próxima función</h3>
+            <span class="ticket-date">5 de Abril</span>
+          </div>
+          <hr class="ticket-divider">
+          <div class="ticket-body">
+            <div class="ticket-row">
+              <span class="label">🕐 Funciones</span>
+              <span class="value">2:30 PM y 4:30 PM</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">📍 Lugar</span>
+              <span class="value">La Corte Teatral</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">🚪 Recepción</span>
+              <span class="value">Media hora antes</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">Adultos</span>
+              <span class="value price-adult">$250 MXN</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">Niños</span>
+              <span class="value price-kid">$200 MXN</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">🔥 Preventa</span>
+              <span class="value price-preventa">$150 MXN</span>
+            </div>
+            <div style="text-align:center; padding-top: 0.5rem;">
+              <span class="preventa-badge">¡Ahorra $100!</span>
+              <p class="preventa-note">*Comprando de lunes a miércoles</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ticket 2: 12 de abril -->
+        <article class="ticket-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="ticket-header">
+            <h3>📅 Segunda función</h3>
+            <span class="ticket-date">12 de Abril</span>
+          </div>
+          <hr class="ticket-divider">
+          <div class="ticket-body">
+            <div class="ticket-row">
+              <span class="label">🕐 Función</span>
+              <span class="value">2:30 PM</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">📍 Lugar</span>
+              <span class="value">La Corte Teatral</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">🚪 Recepción</span>
+              <span class="value">Media hora antes</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">Adultos</span>
+              <span class="value price-adult">$250 MXN</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">Niños</span>
+              <span class="value price-kid">$200 MXN</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">🔥 Preventa</span>
+              <span class="value price-preventa">$150 MXN</span>
+            </div>
+            <div style="text-align:center; padding-top: 0.5rem;">
+              <span class="preventa-badge">¡Ahorra $100!</span>
+              <p class="preventa-note">*Comprando de lunes a miércoles</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Ticket 3: 19 de abril -->
+        <article class="ticket-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="ticket-header">
+            <h3>📅 Última función</h3>
+            <span class="ticket-date">19 de Abril</span>
+          </div>
+          <hr class="ticket-divider">
+          <div class="ticket-body">
+            <div class="ticket-row">
+              <span class="label">🕐 Función</span>
+              <span class="value">4:30 PM</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">📍 Lugar</span>
+              <span class="value">La Corte Teatral</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">🚪 Recepción</span>
+              <span class="value">Media hora antes</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">Adultos</span>
+              <span class="value price-adult">$250 MXN</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">Niños</span>
+              <span class="value price-kid">$200 MXN</span>
+            </div>
+            <div class="ticket-row">
+              <span class="label">🔥 Preventa</span>
+              <span class="value price-preventa">$150 MXN</span>
+            </div>
+            <div style="text-align:center; padding-top: 0.5rem;">
+              <span class="preventa-badge">¡Ahorra $100!</span>
+              <p class="preventa-note">*Comprando de lunes a miércoles</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- CTA Block -->
+      <div class="fechas-cta-block" data-aos="fade-up">
+        <div class="cta-buttons-row">
+          <a href="tel:4481204431" class="btn-cta-phone">
+            📞 Compra ahora: 448 120 4431
+          </a>
+          <a
+            href="https://wa.me/524481204431?text=Hola,%20quiero%20boletos%20para%20El%20Mago%20de%20Oz"
+            class="btn-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            💬 Escribir por WhatsApp
+          </a>
+        </div>
+        <p class="urgency-text">
+          ⚠️ Cupo LIMITADO · No te quedes sin lugar · ¡Solo quedan 3 funciones!
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN 4 — GALERÍA
+       ============================================================ -->
+  <section id="galeria" aria-labelledby="galeria-title">
+    <div class="container">
+      <h2 class="section-title" id="galeria-title" data-aos="fade-up">📸 Así se vive la magia</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Momentos reales de la obra
+      </p>
+
+      <!-- Swiper -->
+      <div class="swiper" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/foto-obra-01.jpg" alt="Foto de la obra El Mago de Oz 1" loading="lazy" width="600" height="400">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/foto-obra-02.jpg" alt="Foto de la obra El Mago de Oz 2" loading="lazy" width="600" height="400">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/foto-obra-03.jpg" alt="Foto de la obra El Mago de Oz 3" loading="lazy" width="600" height="400">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/foto-obra-04.jpg" alt="Foto de la obra El Mago de Oz 4" loading="lazy" width="600" height="400">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/foto-obra-05.jpg" alt="Foto de la obra El Mago de Oz 5" loading="lazy" width="600" height="400">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/foto-obra-06.jpg" alt="Foto de la obra El Mago de Oz 6" loading="lazy" width="600" height="400">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/foto-obra-07.jpg" alt="Foto de la obra El Mago de Oz 7" loading="lazy" width="600" height="400">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/foto-obra-08.jpg" alt="Foto de la obra El Mago de Oz 8" loading="lazy" width="600" height="400">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/foto-obra-09.jpg" alt="Foto de la obra El Mago de Oz 9" loading="lazy" width="600" height="400">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/foto-obra-10.jpg" alt="Foto de la obra El Mago de Oz 10" loading="lazy" width="600" height="400">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev" aria-label="Foto anterior"></div>
+        <div class="swiper-button-next" aria-label="Foto siguiente"></div>
+      </div>
+
+      <div class="gallery-footer" data-aos="fade-up">
+        <p class="gallery-note">📷 Fotos de ensayos y funciones anteriores</p>
+        <p style="margin-bottom: 1rem; font-family: var(--font-headings); font-weight: 700; font-size: 1.05rem;">
+          ¿Ya quieres estar ahí? 🎟️ ¡Aparta tus lugares!
+        </p>
+        <a href="tel:4481204431" class="btn-cta">
+          📞 Llamar para comprar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN 5 — ALIMENTOS
+       ============================================================ -->
+  <section id="alimentos" class="section-alt" aria-labelledby="alimentos-title">
+    <div class="container">
+      <h2 class="section-title" id="alimentos-title" data-aos="fade-up">🍿 ¡La función incluye antojitos!</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Porque la aventura da hambre — disfruta de comida preparada al momento
+      </p>
+
+      <div class="food-grid">
+
+        <div class="food-card" data-aos="fade-up" data-aos-delay="0">
+          <span class="food-icon">🥤</span>
+          <p class="food-name">Refrescos</p>
+          <p class="food-detail">Variedad de sabores</p>
+        </div>
+
+        <div class="food-card" data-aos="fade-up" data-aos-delay="60">
+          <span class="food-icon">🍵</span>
+          <p class="food-name">Té</p>
+          <p class="food-detail">Preparado al momento</p>
+          <span class="fresh-badge">🔥 Al momento</span>
+        </div>
+
+        <div class="food-card" data-aos="fade-up" data-aos-delay="120">
+          <span class="food-icon">☕</span>
+          <p class="food-name">Café</p>
+          <p class="food-detail">Preparado al momento</p>
+          <span class="fresh-badge">🔥 Al momento</span>
+        </div>
+
+        <div class="food-card" data-aos="fade-up" data-aos-delay="180">
+          <span class="food-icon">🥔</span>
+          <p class="food-name">Papas (Sabritas)</p>
+          <p class="food-detail">Variedad de marcas</p>
+        </div>
+
+        <div class="food-card" data-aos="fade-up" data-aos-delay="240">
+          <span class="food-icon">🍟</span>
+          <p class="food-name">Papas a la francesa</p>
+          <p class="food-detail">¡Preparadas al momento!</p>
+          <span class="fresh-badge">🔥 Al momento</span>
+        </div>
+
+        <div class="food-card" data-aos="fade-up" data-aos-delay="300">
+          <span class="food-icon">🍿</span>
+          <p class="food-name">Palomitas</p>
+          <p class="food-detail">¡Recién hechas!</p>
+          <span class="fresh-badge">🔥 Al momento</span>
+        </div>
+
+        <div class="food-card" data-aos="fade-up" data-aos-delay="360">
+          <span class="food-icon">🍕</span>
+          <p class="food-name">Pizza</p>
+          <p class="food-detail">¡Preparada al momento!</p>
+          <span class="fresh-badge">🔥 Al momento</span>
+        </div>
+
+        <div class="food-card" data-aos="fade-up" data-aos-delay="420">
+          <span class="food-icon">🌮</span>
+          <p class="food-name">Tacos</p>
+          <p class="food-detail">¡Preparados al momento!</p>
+          <span class="fresh-badge">🔥 Al momento</span>
+        </div>
+
+      </div>
+
+      <div class="food-note" data-aos="fade-up">
+        💡 <strong>Todo</strong> (excepto refrescos y papas tipo Sabritas) se prepara <strong>al momento</strong>
+        para que lo disfrutes fresquecito.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN 6 — UBICACIÓN Y MAPA
+       ============================================================ -->
+  <section id="ubicacion" aria-labelledby="ubicacion-title">
+    <div class="container">
+      <h2 class="section-title" id="ubicacion-title" data-aos="fade-up">📍 ¿Cómo llegar?</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Estamos en el corazón del Centro Histórico de Querétaro
+      </p>
+
+      <div class="location-grid">
+
+        <!-- Info -->
+        <div class="location-info" data-aos="fade-right">
+          <h3>🏛️ Teatro La Corte Teatral</h3>
+
+          <div class="location-detail">
+            <span class="icon">📍</span>
+            <div>
+              <strong>5 de Mayo #69</strong><br>
+              Col. Centro, Querétaro, Qro.
+            </div>
+          </div>
+
+          <div class="location-detail">
+            <span class="icon">🕐</span>
+            <div>
+              <strong>Recepción:</strong> Media hora antes de cada función
+            </div>
+          </div>
+
+          <div class="location-detail">
+            <span class="icon">📞</span>
+            <div>
+              <a href="tel:4481204431" class="footer-phone">448 120 4431</a>
+            </div>
+          </div>
+
+          <div class="location-warning">
+            🅿️ <strong>Aviso importante:</strong> No contamos con estacionamiento propio.
+            Te recomendamos llegar con tiempo para encontrar lugar en los alrededores
+            del Centro Histórico. ¡La magia vale la pena!
+          </div>
+
+          <a
+            href="https://maps.google.com/?q=5+de+Mayo+69+Centro+Queretaro"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-maps"
+          >
+            🗺️ Abrir en Google Maps
+          </a>
+        </div>
+
+        <!-- Map -->
+        <div data-aos="fade-left">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.4!2d-100.3899!3d20.5931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35b5432a3d08b%3A0x0!2s5+de+Mayo+69%2C+Centro%2C+Quer%C3%A9taro!5e0!3m2!1ses!2smx!4v1680000000000!5m2!1ses!2smx"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación de La Corte Teatral en Querétaro"
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN 7 — SOCIAL PROOF
+       ============================================================ -->
+  <section id="prueba-social" class="section-alt" aria-labelledby="social-title">
+    <div class="container">
+      <h2 class="section-title" id="social-title" data-aos="fade-up">❤️ Familias que ya vivieron la magia</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+        La experiencia que papás y mamás no olvidan
+      </p>
+
+      <div style="display:flex; justify-content:center; margin-bottom:2rem;" data-aos="zoom-in">
+        <div class="social-counter">
+          <span class="counter-icon">🎭</span>
+          <div class="counter-text">
+            <strong>+500</strong>
+            <span>familias ya vivieron la magia</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Mis hijos no pararon de reír y cantar. ¡Fue el mejor domingo del mes!"</p>
+          <span class="testimonial-author">— María G., mamá de 2</span>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Los actores son increíbles. Mi niña de 4 años quedó encantada con Dorothy. ¡Volveremos!"</p>
+          <span class="testimonial-author">— Roberto V., papá</span>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Llevé a mis nietos y fue una tarde perfecta. El precio es muy accesible para la calidad que ofrecen."</p>
+          <span class="testimonial-author">— Esperanza M., abuela</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN 8 — CTA FINAL
+       ============================================================ -->
+  <section id="cta-final" aria-labelledby="cta-final-title">
+    <!-- Sparkles extra -->
+    <div class="sparkles" aria-hidden="true"></div>
+
+    <div class="container cta-final-content">
+
+      <span class="cta-final-magic" data-aos="fade-down">✨ La magia te espera ✨</span>
+
+      <h2 class="cta-final-title" id="cta-final-title" data-aos="fade-up">
+        ¡No dejes pasar<br>esta oportunidad!
+      </h2>
+
+      <p class="cta-final-desc" data-aos="fade-up" data-aos-delay="100">
+        Solo 3 domingos de abril para vivir<br>
+        <strong>El Mago de Oz</strong> en vivo en Querétaro.
+      </p>
+
+      <span class="cta-final-preventa" data-aos="fade-up" data-aos-delay="150">
+        🔥 PREVENTA desde $150 MXN<br>
+        <small style="font-family: var(--font-body); font-weight: 400; font-size: 0.85rem; opacity: 0.85;">(Comprando de lunes a miércoles)</small>
+      </span>
+
+      <!-- Countdown repetido -->
+      <div class="countdown-wrapper" style="margin-bottom: 2rem;" data-aos="fade-up" data-aos-delay="200" aria-live="polite">
+        <p class="countdown-label">⏳ Próxima función en:</p>
+        <div class="countdown">
+          <div class="countdown-unit">
+            <span class="countdown-num cd-days">00</span>
+            <span class="countdown-lbl">Días</span>
+          </div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-num cd-hours">00</span>
+            <span class="countdown-lbl">Horas</span>
+          </div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-num cd-mins">00</span>
+            <span class="countdown-lbl">Mins</span>
+          </div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-num cd-secs">00</span>
+            <span class="countdown-lbl">Segs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-final-buttons" data-aos="fade-up" data-aos-delay="250">
+        <a href="tel:4481204431" class="btn-cta" style="font-size: 1.15rem; padding: 1.2rem 2.5rem;">
+          📞 Llama ahora: 448 120 4431
+        </a>
+        <a
+          href="https://wa.me/524481204431?text=Hola,%20quiero%20boletos%20para%20El%20Mago%20de%20Oz"
+          class="btn-whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          💬 Escríbenos por WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div>
+          <div class="footer-brand">
+            <img src="img/logo.png" alt="La Corte Teatral" style="height:40px; width:auto; max-width:40px; object-fit:contain; display:block; margin-bottom:0.4rem; filter: brightness(0) invert(1);">
+            La Corte Teatral
+          </div>
+          <div class="footer-address">
+            5 de Mayo #69, Col. Centro<br>
+            Querétaro, Qro. · México<br>
+            <a href="tel:4481204431" class="footer-phone">📞 448 120 4431</a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#obra">La Obra</a>
+          <a href="#fechas">Fechas y Precios</a>
+          <a href="#galeria">Galería</a>
+          <a href="#ubicacion">Ubicación</a>
+          <a href="#alimentos">Alimentos</a>
+        </div>
+
+        <div>
+          <p style="font-family: var(--font-headings); font-size: 0.85rem; margin-bottom: 0.75rem; color: rgba(255,255,255,0.7);">¡Síguenos!</p>
+          <div style="display:flex; gap:0.75rem; align-items:center;">
+
+            <!-- Facebook -->
+            <a href="#" aria-label="Facebook" title="Facebook" class="social-icon-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="#" aria-label="Instagram" title="Instagram" class="social-icon-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+
+            <!-- TikTok -->
+            <a href="#" aria-label="TikTok" title="TikTok" class="social-icon-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.19 8.19 0 004.79 1.52V6.75a4.85 4.85 0 01-1.02-.06z"/>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 La Corte Teatral. Todos los derechos reservados.<br>
+        Adaptación: César Ferrón · Dirección: Joel Jiménez
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTÓN FLOTANTE CTA
+       ============================================================ -->
+  <a
+    href="tel:4481204431"
+    class="floating-cta"
+    aria-label="Llamar para comprar boletos"
+    title="Comprar boletos"
+  >
+    🎟️ ¡Comprar boletos!
+  </a>
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+
+  <!-- Main JS -->
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
